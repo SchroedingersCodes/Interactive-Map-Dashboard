@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px, 25px, 0px, 25px;
+            padding: 0;
+        }
+
+        h2,
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        /* Dashboard grid layout */
+        .topOfDashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .midOfDashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .image {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+
+        /* Style for iframe containers */
+        .map-container {
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Interactive Map Dashboard</h2>
+
+    <div id="bodyOfDashboard">
+
+        <h2>Visualizing the Healthcare Gaps: Niger State's Infrastructure at a Glance
+</h2>
+
+        <div class="topOfDashboard">
+            <!-- Loading each map via iframe -->
+            <div class="map-container">
+                <h3>Map of Nigeria showing Niger state</h3>
+                <iframe src="./DICWebmap/nigerfocus/qgis2web_2024_09_27-12_59_10_348542/index.html"
+                    title="Map 1"></iframe>
+            </div>
+            <div class="map-container">
+                <h3>Niger state population density map</h3>
+                <iframe src="./DICWebmap/POPdensity map/qgis2web_2024_09_28-18_47_19_184453/index.html
+            " title="Map 2"></iframe>
+            </div>
+
+        </div>
+        <p> Niger State, located in North-Central Nigeria, is the largest state in the country by landmass, covering
+            approximately 76,000 square kilometers. The state has an estimated population of over **5.7 million people**
+            and is predominantly rural, with agriculture being the major occupation. Crops like rice, millet, maize, and
+            yams thrive here, alongside cattle rearing, contributing to the state's economy. The state also possesses
+            rich mineral resources, including gold, marble, and limestone.</p>
+
+        <br>
+
+        <div class="image">
+            <div>
+                <img src="./images/Primary Healthcare.png.png " style="width: 290px;">
+                <p>
+
+                
+               This is the first point of contact when someone needs medical care. It includes
+                basic services like check-ups, vaccinations, and treatment for common illnesses (like colds or minor
+                injuries). It's usually provided at local clinics or health centers.
+                </p>
+
+            </div>
+            <div>
+                <img src="./images/Secondary Healthcare.png.png" style="width: 290px;">
+                    <p> If the issue is more serious or requires specialized
+                        treatment, patients are referred to secondary healthcare. This is provided by hospitals or
+                        specialists, for things like surgeries, specialist consultations, or advanced diagnostic tests.
+
+                    </p>
+            </div>
+            <div>
+                 <img src="./images/Tertiary healthcare.png" style="width: 290px;">
+                 <p>
+                   This is the most advanced level of healthcare. It involves highly specialized treatments
+                    or surgeries that require expert care, often provided in teaching hospitals or large medical
+                    centers. Examples include cancer treatment, organ transplants, or complex surgeries.
+
+                 </p>
+
+            </div>
+           
+        </div>
+        <br>
+        <p>Health centers in Niger state are predominantly categorized into primary, secondary and tertiary healthcare
+            centers. However, despite its agricultural and natural wealth, Niger State faces significant challenges in
+            healthcare delivery. The state has a high number of primary health centers (PHCs), especially in rural
+            areas, but there is a severe shortage of secondary and tertiary healthcare facilities. This imbalance places
+            immense pressure on primary centers, which are often ill-equipped to handle complex cases. People in need of
+            specialized care frequently have to travel to neighboring states, contributing to healthcare inefficiencies
+            and delays in treatment.</p>
+        </p>
+
+        <p>Healthcare Situation in Niger State:
+
+           
+            Niger State has a network of 1967 primary healthcare centers, but the number of secondary facilities is only
+            around 32, and there are only 11 tertiary hospitals. This unequal distribution poses a major challenge for
+            the healthcare system, especially for those in rural areas who rely on Primary Healthcare Centers for all forms of care, including
+            emergencies.
+            <br>
+            <br>
+
+            Challenges:
+            <ul>
+                <li>Understaffing and Equipment Shortages: Many Primary Healthcare Centers lack qualified doctors and
+                    nurses, and the
+                    available
+                    medical equipment is often outdated or insufficient. </li>
+                <li>Rural Healthcare Access: People in remote parts of Niger State face long distances to access
+                    secondary
+                    or tertiary care, which often results in avoidable health complications.
+                </li>
+                <li>Inadequate Referral Systems: The state has a poor referral system between Primary Healthcare Centers
+                    and higher-level
+                    facilities, leading to delays in receiving specialized treatment.
+                </li>
+
+            </ul>
+
+        </p>
+        <div class="midOfDashboard">
+            <div class="map-container">
+                <iframe src="./DICWebmap/SHCTHCPHC/qgis2web_2024_09_27-23_35_11_288342/index.html"
+                    title="Map 3"></iframe>
+            </div>
+            <div class="map-container">
+                <iframe src="./DICWebmap/STHC/qgis2web_2024_09_27-23_58_07_974948/index.html" title="Map 3"></iframe>
+            </div>
+
+        </div>
+
+        <div class="image">
+            <div><img src="./DICWebmap/ownershpCat.PNG " style="width: 290px; height: 250px;">
+                <p>The public sector owns about 54% of healthcare centers in Niger state while the private sector
+                    accounts
+                    for approximately 2% while others such as religious and humanitarian organizations account for 44%
+                </p>
+            </div>
+            <div>
+                <img src="./DICWebmap/subcatHC.PNG" style="width: 290px; height: 250px;">
+                <p> Among the subcategories, primary health centers account for about 70%,Dispensaries account for
+                    roughly 20%
+                    and other subcategories account for the remaining 10%.</p>
+            </div>
+            <div>
+                <img src="./DICWebmap/ring chart.PNG" style="width: 290px; height: 250px;">
+                <p>The primary health centers account for about 98% of all health centers while secondary and tertiary
+                    health
+                    centers combined account for the remaining 2%
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div style="text-align: center;">
+        <h3>References</h3>
+        <ul style="list-style-type:none;">
+            <li> https://data.grid3.org/datasets</li>
+            <li>Office for the Coordination of Humanitarian Affairs(OCHA)(https://data.humdata.org/dataset/) </li>
+            <li>
+                https://cdn.one.org/pdfs/ONE_2022_Nigeria_Budgetary_Health_Report.pdf
+
+            </li>
+
+
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
